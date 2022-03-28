@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="h1-wrapper">
+          <div>
+            <span class="material-icons"> developer_board </span>
+          </div>
+          <h1>Dashboard</h1>
+        </div>
+        <nav class="sidebar-nav">
+          <ul class="primary-nav">
+            <li><span class="material-icons left">home</span>Home</li>
+            <li><span class="material-icons"> account_box </span>Profile</li>
+            <li><span class="material-icons"> mode_comment </span>Messages</li>
+            <li><span class="material-icons"> history </span>History</li>
+            <li><span class="material-icons"> task </span>Tasks</li>
+            <li><span class="material-icons"> groups </span>Communities</li>
+          </ul>
+          <ul class="secondary-nav">
+            <li><span class="material-icons"> settings </span>Settings</li>
+            <li><span class="material-icons"> help_center </span>Support</li>
+            <li><span class="material-icons"> security </span>Privacy</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main">
+        <div class="header">
+          <div class="search-bar">
+            <span class="material-icons"> search </span
+            ><input
+              class="search_input"
+              type="text"
+              name="search_bar"
+              id="search"
+            />
+          </div>
+          <div class="user-info"></div>
+          <div class="greeting"></div>
+          <nav class="nav">
+            <button class="btn">New</button>
+            <button class="btn">Upload</button>
+            <button class="btn">Share</button>
+          </nav>
+        </div>
+        <div class="content">
+          <div class="projects"></div>
+          <div class="announcements"></div>
+          <div class="trending"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
