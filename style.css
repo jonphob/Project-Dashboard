@@ -106,6 +106,26 @@ body {
   align-items: center;
 }
 
+.user-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-info .material-icons {
+  margin-right: 0;
+}
+
+.user-info p {
+  font-size: 1.5rem;
+}
+
+.avatar {
+  width: 50px;
+  height: auto;
+  margin-inline: 5rem;
+}
+
 .btn {
   border-radius: 20px;
   width: 120px;
