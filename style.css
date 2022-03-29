@@ -57,12 +57,13 @@ body {
   margin-bottom: 0.8rem;
   align-items: center;
   cursor: pointer;
+  color: #e7e7e7;
   transition: 350ms;
 }
 
 .primary-nav li:hover,
 .secondary-nav li:hover {
-  color: #e7e7e7;
+  color: #fff;
   transform: translateX(3px);
 }
 
