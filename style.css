@@ -49,12 +49,12 @@ body {
 .primary-nav,
 .secondary-nav {
   margin-left: 30px;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .primary-nav li,
 .secondary-nav li {
-  margin-bottom: 20px;
+  margin-bottom: 0.8rem;
   align-items: center;
   cursor: pointer;
   transition: 350ms;
@@ -89,7 +89,7 @@ body {
 }
 
 .search-bar .material-icons {
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: var(--accent);
   vertical-align: middle;
 }
@@ -127,7 +127,7 @@ body {
 }
 
 .greeting p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
@@ -142,7 +142,7 @@ body {
 }
 
 .user-info p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
@@ -163,7 +163,7 @@ body {
   background-color: var(--accent);
   color: rgb(255, 255, 255);
   transition: 350ms;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 .btn:hover {
@@ -181,20 +181,30 @@ body {
   background-color: #f6f6f6;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 50px 200px 1fr;
   gap: 10px;
   align-items: center;
   justify-content: end;
   justify-items: center;
 }
 
+.projects h2 {
+  grid-column: 1 / span 2;
+  font-size: 1.3rem;
+  align-self: start;
+  justify-self: left;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
 .card {
   background-color: var(--content-bg);
-  padding: 15px;
+  padding: 15px 10px;
   border-radius: 10px;
-  margin: 20px;
+  margin: 20px 10px;
   border-left: var(--main-bg-color) 10px solid;
   transition: 300ms;
+  align-self: start;
 }
 
 .card:hover {
@@ -205,7 +215,7 @@ body {
 
 .card-title {
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   margin-bottom: 10px;
 }
 
@@ -213,6 +223,7 @@ body {
   color: rgb(104, 104, 104);
   margin-bottom: 20px;
   line-height: 20px;
+  font-size: 1rem;
 }
 
 .feeds {
@@ -222,15 +233,15 @@ body {
 .announcements h2,
 .trending h2 {
   font-size: 1.3rem;
-  font-weight: 600;
-  margin: 14px 30px 10px 30px;
+  font-weight: 500;
+  margin: 20px 30px;
 }
 
 .announcement-feed,
 .trending-feed {
   background-color: var(--content-bg);
-  margin: 20px auto;
-  width: 250px;
+  margin: 38px 15px 20px 30px;
+  width: 180px;
   padding: 20px 10px;
   border-radius: 10px;
 }
@@ -241,7 +252,7 @@ body {
 
 .announce-heading {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 5px;
 }
 
@@ -252,6 +263,10 @@ body {
 
 hr {
   margin: 16px;
+}
+
+.trending h2 {
+  margin-top: 40px;
 }
 
 .trending-item {
