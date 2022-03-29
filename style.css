@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Quicksand:wght@700&display=swap");
 
+:root {
+  --main-bg-color: #a68dad;
+  --accent: #c7b198;
+  --accent-hover: #dfd3c3;
+  --content-bg: #f0ece3;
+}
+
 body {
   font-family: "Mulish", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -18,7 +25,7 @@ body {
 }
 
 .sidebar {
-  background-color: lightskyblue;
+  background-color: var(--main-bg-color);
   color: #fff;
 }
 
@@ -72,6 +79,7 @@ body {
   grid-template-columns: 1.5fr 1fr;
   grid-template-rows: 1fr 1fr;
   background-color: #fff;
+  box-shadow: 0px 1px 8px var(--accent);
 }
 
 .search-bar {
@@ -81,7 +89,7 @@ body {
 
 .search-bar .material-icons {
   font-size: 2rem;
-  color: #f97316;
+  color: var(--accent);
   vertical-align: middle;
 }
 
@@ -97,13 +105,29 @@ body {
 }
 
 .search_input:focus-visible {
-  outline: #f97316 3px solid;
+  outline: var(--accent) 3px solid;
 }
 
 .nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.greeting {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.greeting small {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.greeting p {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .user-info {
@@ -118,6 +142,7 @@ body {
 
 .user-info p {
   font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .avatar {
@@ -126,21 +151,129 @@ body {
   margin-inline: 5rem;
 }
 
+.greeting .avatar {
+  width: 65px;
+}
+
 .btn {
   border-radius: 20px;
   width: 120px;
   height: 40px;
-  background-color: #fb923c;
+  background-color: var(--accent);
   color: rgb(255, 255, 255);
   transition: 350ms;
   font-size: 1.3rem;
 }
 
 .btn:hover {
-  background-color: #f97316;
+  background-color: var(--accent-hover);
   cursor: pointer;
 }
 
 .content {
-  background-color: beige;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  background-color: var(--content-bg);
+}
+
+.projects {
+  background-color: #f6f6f6;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  justify-content: end;
+  justify-items: center;
+}
+
+.card {
+  background-color: var(--content-bg);
+  padding: 30px;
+  border-radius: 10px;
+  margin: 40px;
+  border-left: var(--main-bg-color) 10px solid;
+  transition: 300ms;
+}
+
+.card:hover {
+  transform: scale(1.01);
+  background-color: #e4dfd3;
+  cursor: pointer;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  color: rgb(104, 104, 104);
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+.feeds {
+  background-color: #f6f6f6;
+}
+
+.announcements h2,
+.trending h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 14px 30px 10px 30px;
+}
+
+.announcement-feed,
+.trending-feed {
+  background-color: var(--content-bg);
+  margin: 20px auto;
+  width: 250px;
+  padding: 20px 10px;
+  border-radius: 5px;
+}
+
+.announce-item {
+  padding-inline: 10px;
+}
+
+.announce-heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.announce-body {
+  color: #868686;
+}
+
+hr {
+  margin: 16px;
+}
+
+.trending-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-items: center;
+  margin-bottom: 20px;
+}
+
+.trending img {
+  width: 50px;
+  grid-row: 1 / span 2;
+}
+
+.trending-text {
+  align-self: center;
+  justify-self: left;
+  color: #868686;
+}
+
+.handle {
+  justify-self: left;
+  align-self: end;
+  margin-bottom: 0px;
+  color: black;
+  font-weight: 600;
 }
