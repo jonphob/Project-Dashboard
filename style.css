@@ -227,6 +227,10 @@ body {
   font-size: 1rem;
 }
 
+.card-icons {
+  color: var(--main-bg-color);
+}
+
 .feeds {
   background-color: #f6f6f6;
 }
